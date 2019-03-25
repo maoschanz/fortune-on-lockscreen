@@ -38,7 +38,7 @@ function tellFortune() {
 		fortune = out.toString();
 	}
 
-	let notification = new MessageTray.Notification(s, '', fortune);
+	let notification = new MessageTray.Notification(s, '🐄', fortune);
 	notification.setTransient(true);
 	s.notify(notification);
 };
