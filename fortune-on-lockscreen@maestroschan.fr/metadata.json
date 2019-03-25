@@ -3,6 +3,7 @@
   "description": "Display a `fortune` on the lockscreen", 
   "name": "Fortune", 
   "shell-version": [
+    "3.26", 
     "3.28", 
     "3.30",
     "3.32"

@@ -31,9 +31,7 @@ function tellFortune() {
 	Main.messageTray.add(s);
 	
 	let fortune = ''
-	
 	let [res, out] = GLib.spawn_sync(null, ['fortune'], null, GLib.SpawnFlags.SEARCH_PATH, null);
-
 	if(out == null) {
 		fortune = _("Error executing command.");
 	} else {
@@ -52,5 +50,4 @@ function enable() {
 function disable() {
 	tellFortune();
 }
-
 
